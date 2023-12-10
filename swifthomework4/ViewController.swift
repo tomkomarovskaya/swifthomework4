@@ -48,8 +48,8 @@ class ViewController: UIViewController {
         let sortedStrings = squaredArray.map { $0.1 }.sorted()
         print(sortedStrings)
         
-        //******
-        //Задание 3 - Hаписать список книг и отфильтровать книги по жанрам -> horror = []
+        //дополнительные задания
+        //*Задание 3 - Hаписать список книг и отфильтровать книги по жанрам -> horror = []
         var books =
         ["Book001": ["title": "Swift Programming", "genre": "Education"],
          "Book002": ["title": "The Alchemist", "genre": "Fiction"],
@@ -60,14 +60,14 @@ class ViewController: UIViewController {
         let filteredBooks = books.filter { $0.value["genre"] == "Fiction" }
         print(filteredBooks)
         
-        //Задание 4 - объединить 2 массива. первый массив это название групп. второй название песен
+        //*Задание 4 - объединить 2 массива. первый массив это название групп. второй название песен
         var groups = ["Cage the Elephant", "The Pretty Reckless", "Radiohead"]
         var songs = ["Black Madonna", "My medicine", "Creep"]
         let combinedArray = zip(groups, songs).flatMap { [$0, $1] }
         print(combinedArray)
         
         
-        //Задание 5: Создать функцию которая принимает массив чисел и умножает каждое число на 2 используя функцию map.
+        //*Задание 5: Создать функцию которая принимает массив чисел и умножает каждое число на 2 используя функцию map.
         func multiplyByTwo(_ arr: [Int?]) -> [Int] {
             var result = [Int]()
             for num in arr {
